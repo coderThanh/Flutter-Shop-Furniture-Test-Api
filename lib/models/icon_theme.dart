@@ -1,4 +1,4 @@
-class IconTheme {
+class IconApp {
   static String arrowLongLeft = 'assets/icons/arrow-long-left.svg';
   static String bag = 'assets/icons/bag.svg';
   static String check = 'assets/icons/check.svg';

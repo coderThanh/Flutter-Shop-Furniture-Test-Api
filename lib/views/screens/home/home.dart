@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'componets/body.dart';
+import 'componets/header.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -11,9 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Hello Furniture App'),
-      ),
+      appBar: header(context),
+      body: const Body(),
     );
   }
 }

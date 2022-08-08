@@ -8,11 +8,13 @@ TextTheme textThemeLight = const TextTheme(
     fontSize: 14,
     height: 1.5,
     fontWeight: FontWeight.normal,
+    overflow: TextOverflow.ellipsis,
   ),
   titleMedium: TextStyle(
     color: StyleTheme.colorText,
-    fontSize: 16,
+    fontSize: 18,
     height: 1.3,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
+    overflow: TextOverflow.ellipsis,
   ),
 );
