@@ -36,9 +36,12 @@ class BoxProduct extends StatelessWidget {
               exception: product.image != null,
               ifTrue: AspectRatio(
                 aspectRatio: 1,
-                child: FadeInImage.assetNetwork(
-                    placeholder: GifTheme.spinner,
-                    image: product.image.toString()),
+                child: Hero(
+                  tag: product.id,
+                  child: FadeInImage.assetNetwork(
+                      placeholder: GifTheme.spinner,
+                      image: product.image.toString()),
+                ),
               ),
             ),
             const SizedBox(height: 5),

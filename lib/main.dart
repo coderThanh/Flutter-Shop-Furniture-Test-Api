@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'models/data_theme_light.dart';
 import 'views/screens/home/home.dart';
 
-void main() {
+void main() async {
+  //
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp],
+  ); // To turn off landscape mode
   runApp(const MyApp());
 }
 

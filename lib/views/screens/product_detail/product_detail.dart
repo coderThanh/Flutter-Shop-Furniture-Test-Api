@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/product.dart';
+import 'components/app_bar.dart';
+import 'components/body.dart';
 
 class ProductDetialScreen extends StatelessWidget {
   const ProductDetialScreen({Key? key, required this.product})
@@ -11,8 +13,8 @@ class ProductDetialScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(child: Text(product.title)),
+      appBar: screenAppBar(context),
+      body: Body(product: product),
     );
   }
 }
