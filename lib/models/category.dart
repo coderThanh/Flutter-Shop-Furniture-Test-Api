@@ -27,7 +27,7 @@ class Category extends Equatable {
       id: id ?? this.id,
       title: title ?? this.title,
       numOfProducts: numOfProducts ?? this.numOfProducts,
-      image: image,
+      image: image ?? this.image,
       createdAt: createdAt ?? this.createdAt,
     );
   }

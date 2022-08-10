@@ -1,6 +1,6 @@
 # furniture_api_app
 
-A new Project Flutter for up skill call API
+A new Project Flutter for up skill call API, unit test
 
 ## Getting Started
 
@@ -15,6 +15,13 @@ A few resources to get you started if this is your first Flutter project:
 
 - [Video Code Tutorial](https://www.youtube.com/watch?v=8uLI8ade1aA)
 - [This source code github ](https://github.com/coderThanh/Flutter-Shop-Furniture-Test-Api)
+
+A few file was tested:
+
+- models/category
+- models/product
+- services/featch_categores
+- services/featch_products
 
 A few images demo:
 

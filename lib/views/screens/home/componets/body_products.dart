@@ -24,7 +24,7 @@ class HomeProducts extends StatelessWidget {
           children: [
             const TitleSection(title: "Recommands For You"),
             FutureBuilder(
-              future: fetchProducts(url),
+              future: fetchProducts(url: url),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   List<Product> products = snapshot.data as List<Product>;

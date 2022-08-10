@@ -3,18 +3,20 @@ import 'dart:convert' as convert;
 
 import '../models/product.dart';
 
-Future<List<Product>> fetchProducts(Uri url) async {
-  var res = await http.get(url);
+Future<List<Product>> fetchProducts({required Uri url}) async {
+  try {
+    var res = await http.get(url);
 
-  if (res.statusCode == 200) {
-    List jsonRespone = convert.jsonDecode(res.body);
-    List<Product> result = jsonRespone.map((data) {
-      return Product.fromJson(data);
-    }).toList();
+    if (res.statusCode == 200) {
+      List jsonRespone = convert.jsonDecode(res.body);
+      List<Product> result = jsonRespone.map((data) {
+        return Product.fromJson(data);
+      }).toList();
 
-    return result;
+      return result;
+    }
+    return throw 'Fetch error status ${res.statusCode} failed to connected API';
+  } catch (e) {
+    rethrow;
   }
-
-  return throw Exception(
-      'Status code ${res.statusCode}: Failed to load Producs from API!');
 }
