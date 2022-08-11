@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:furniture_api_app/models/gif_theme.dart';
-import 'package:furniture_api_app/models/style_theme_light.dart';
-import 'package:furniture_api_app/views/widgets/check_condition_widget.dart';
 
+import '../../models/gif_theme.dart';
 import '../../models/product.dart';
+import '../../models/style_theme_light.dart';
+import 'check_condition_widget.dart';
 
 class BoxProduct extends StatelessWidget {
   const BoxProduct({

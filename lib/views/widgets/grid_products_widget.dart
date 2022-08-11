@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:furniture_api_app/views/screens/product_detail/product_detail.dart';
 
 import '../../models/constant_theme.dart';
 import '../../models/product.dart';
+import '../screens/product_detail/product_detail.dart';
 import 'box_product_widget.dart';
 
 class GridProducts extends StatelessWidget {

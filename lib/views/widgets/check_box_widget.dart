@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:furniture_api_app/models/icon_theme.dart';
-import 'package:furniture_api_app/views/widgets/check_condition_widget.dart';
+
+import '../../models/icon_theme.dart';
+import 'check_condition_widget.dart';
 
 class CheckBox extends StatelessWidget {
   const CheckBox({

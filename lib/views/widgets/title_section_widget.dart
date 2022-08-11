@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:furniture_api_app/models/constant_theme.dart';
+
+import '../../models/constant_theme.dart';
 
 class TitleSection extends StatelessWidget {
   const TitleSection({
